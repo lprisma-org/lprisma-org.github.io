@@ -29,9 +29,71 @@ _styles: >
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
+  # and create one content file for each profile inside _pages/  
   - align: right
-    image: members_pics/rodrigo_lima.jpg
+    image: members_pics/pedro_brom.jpg
+    content: members/pedro_brom.md
+    image_circular: true
+    socials:
+      - icon: fa-solid fa-envelope
+        url: mailto:[EMAIL_ADDRESS]
+        title: Email
+      - icon: ai ai-google-scholar
+        url: https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID
+        title: Google Scholar
+      - icon: ai ai-lattes
+        url: http://lattes.cnpq.br/YOUR_LATTES_ID
+        title: Lattes
+      - icon: ai ai-orcid
+        url: https://orcid.org/YOUR_ORCID_ID
+        title: ORCID
+      - icon: fa-brands fa-github
+        url: https://github.com/simus-opt
+        title: GitHub
+      - icon: fa-brands fa-linkedin
+        url: https://www.linkedin.com/in/YOUR_LINKEDIN
+        title: LinkedIn
+      - icon: ai ai-cv
+        url: /assets/pdf/example_pdf.pdf
+        title: CV
+    more_info: >
+      <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
+      <p>SCIA, Quadra 16, Área Especial n° 01.</p>
+      <p>Brasília, Distrito Federal 71250-000.</p>
+
+  - align: right
+    image: members_pics/rodrigo_abdo.jpg
+    content: members/rodrigo_abdo.md
+    image_circular: true
+    socials:
+      - icon: fa-solid fa-envelope
+        url: mailto:rodrigo.abdo@ifb.edu.br
+        title: Email
+      - icon: ai ai-google-scholar
+        url: https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID
+        title: Google Scholar
+      - icon: ai ai-lattes
+        url: http://lattes.cnpq.br/YOUR_LATTES_ID
+        title: Lattes
+      - icon: ai ai-orcid
+        url: https://orcid.org/YOUR_ORCID_ID
+        title: ORCID
+      - icon: fa-brands fa-github
+        url: https://github.com/simus-opt
+        title: GitHub
+      - icon: fa-brands fa-linkedin
+        url: https://www.linkedin.com/in/YOUR_LINKEDIN
+        title: LinkedIn
+      - icon: ai ai-cv
+        url: /assets/pdf/example_pdf.pdf
+        title: CV
+    more_info: >
+      <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
+      <p>SCIA, Quadra 16, Área Especial n° 01.</p>
+      <p>Brasília, Distrito Federal 71250-000.</p>
+
+  - align: right
+    image: members_pics/rodrigo_lima.png
     content: members/rodrigo_lima.md
     image_circular: true
     socials:

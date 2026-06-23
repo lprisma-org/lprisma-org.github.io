@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank        # the website title (if blank, full name will be used instead)
-first_name: SIMUS - 
+title: L-PRISMA        # the website title (if blank, full name will be used instead)
+first_name: 
 middle_name:  
-last_name: Grupo de Simulação Estrutural
+last_name: 
 contact_note: >     # the ">" symbol means to ignore newlines until "footer_text:"
   You can even add a little note about which of these is the best way to reach you.
 description: >      # the ">" symbol means to ignore newlines until "footer_text:"
@@ -16,9 +16,9 @@ footer_text: >
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: # add your own keywords or leave empty
 lang: pt-br                      # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: SIMUS_Logo_Transparente.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: lprisma_logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://simus-opt.github.io # the base hostname & protocol for your site
+url: https://lprisma-org.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:     # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR

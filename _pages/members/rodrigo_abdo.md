@@ -1,0 +1,7 @@
+**Rodrigo Figueiredo Abdo** é Doutor em Ciências Mecânicas pela Universidade de Brasília (UnB), Mestre em Engenharia Mecânica pela Universidade Federal de Minas Gerais (UFMG) e Engenheiro Mecânico pela PUC Minas. Atualmente é professor do Instituto Federal de Brasília (IFB), atuando em regime de dedicação exclusiva nos cursos das áreas de Mecânica e Matemática. Sua trajetória acadêmica e profissional combina conhecimentos em mecânica dos fluidos, energia, modelagem computacional e ciência de dados.
+
+Sua pesquisa concentra-se na mecânica dos fluidos complexos, escoamentos multifásicos e materiais magnetorreológicos, com destaque para o estudo reológico e magnético de emulsões ferrofluídicas submetidas a escoamentos e campos magnéticos. Também desenvolve trabalhos em armazenamento criogênico de energia, energias renováveis e modelagem matemática aplicada a fenômenos de transporte. Mais recentemente, incorporou técnicas de aprendizado de máquina científico, atuando em redes neurais informadas pela física (Physics-Informed Neural Networks – PINNs), descoberta de equações governantes a partir de dados (SINDy) e integração entre inteligência artificial e modelagem computacional.
+
+<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+

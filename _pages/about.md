@@ -2,12 +2,12 @@
 layout: about
 title: Sobre
 permalink: /
-subtitle: Elementos Finitos - Otimização Topológica - Optomecânica
+subtitle: <strong>Laboratório de Processamento e Reconhecimento Inteligente de Sistemas e Métodos Analíticos</strong>
 
 profile:
   align: center
-  image: SIMUS_Logo.png
-  image_circular: true # crops the image to make it circular
+  image: lprisma_logo.png
+  image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -30,22 +30,26 @@ partner_institutions:
   # Use 'logo' for image files (place in assets/img/partners/)
   # Use 'icon' for Font Awesome/Academicons classes
   - name: "IFB"
-    url: "https://www.ifb.edu.br"
-    logo: "partners/IFB_Logo.png"
+    url: "https://www.ifb.edu.br/campus-estrutural"
+    logo: "partners/IFB_logo.png"
+  - name: "UNB"
+    url: "https://www.unb.br"
+    logo: "partners/UNB_logo.png"
   - name: "UNICAMP"
     url: "https://www.unicamp.br"
-    logo: "partners/UNICAMP_Logo.jpg"
-  - name: "FAPESP"
-    url: "https://fapesp.br"
-    logo: "partners/FAPESP.png"
+    logo: "partners/UNICAMP_logo.png"
+  - name: "FAPDF"
+    url: "https://www.fap.df.gov.br/"
+    logo: "partners/FAPDF_logo.png"
   - name: "FDTE"
     url: "https://www.fdte.org.br"
-    logo: "partners/FDTE_Logo.png"
-
-
+    logo: "partners/FDTE_logo.png"
+  - name: "Instituto Steiner"
+    url: "https://instituto-steiner.org.br/"
+    logo: "partners/IS_logo.png"
 ---
-SIMUS é um grupo de pesquisa dedicado à simulação computacional de estruturas, com foco em mecânica computacional, otimização topológica e optomecânica aplicada. Utilizando ferramentas de código aberto como o FEniCSx, Gmsh e ParaView, e softwares comerciais como o ANSYS, SolidWorks e Inventor, o grupo desenvolve soluções para problemas advindos de análises multifísicas em projeto estrutural, vibroacústica, materiais multifuncionais e sistemas de alta precisão, promovendo simultaneamente inovação, formação de recursos humanos e divulgação do conhecimento técnico-científico.
 
+O L-PRISMA é um grupo de pesquisa interdisciplinar que reúne docentes das Ciências Exatas e Engenharias com foco no desenvolvimento e aplicação de métodos avançados de análise de dados e inteligência artificial. O grupo atua tanto em pesquisas teóricas quanto aplicadas, promovendo a integração entre modelagem numérica, aprendizado de máquina, reconhecimento de padrões e estatística computacional. Entre os principais interesses do L-PRISMA estão o desenvolvimento de modelos preditivos, algoritmos de aprendizado supervisionado e não supervisionado, redes neurais artificiais, análise de séries temporais e simulações numéricas. Além da pesquisa científica, o grupo contribui para a formação de recursos humanos qualificados por meio da orientação de estudantes em projetos de extensão e inovação tecnológica, em parcerias com instituições públicas e privadas e na divulgação científica dos trabalhos realizados pelo grupo.
 
 
 
