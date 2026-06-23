@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://simus-opt.github.io/sitemap.xml
+Sitemap: https://lprisma-org.github.io/sitemap.xml
