@@ -1,12 +1,79 @@
 ---
-layout: page
-title: project 1
-description: with background image
+layout: distill
+title: aproject 1 teste
+description: an example of a distill-style blog post and main elements
+tags: distill formatting
+giscus_comments: true
+date: 2021-05-22
+featured: true
 img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
+mermaid:
+  enabled: true
+  zoomable: true
+code_diff: true
+map: true
+chart:
+  chartjs: true
+  echarts: true
+  vega_lite: true
+tikzjax: true
+typograms: true
+
+authors:
+  - name: Albert Einstein
+    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IAS, Princeton
+  - name: Boris Podolsky
+    url: "https://en.wikipedia.org/wiki/Boris_Podolsky"
+    affiliations:
+      name: IAS, Princeton
+  - name: Nathan Rosen
+    url: "https://en.wikipedia.org/wiki/Nathan_Rosen"
+    affiliations:
+      name: IAS, Princeton
+
+bibliography: 2018-12-22-distill.bib
+
+# Optionally, you can add a table of contents to your post.
+# NOTES:
+#   - make sure that TOC names match the actual section names
+#     for hyperlinks within the post to work correctly.
+#   - we may want to automate TOC generation in the future using
+#     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
+toc:
+  - name: Equations
+    # if a section has subsections, you can add them as follows:
+    # subsections:
+    #   - name: Example Child Subsection 1
+    #   - name: Example Child Subsection 2
+  - name: Citations
+  - name: Footnotes
+  - name: Code Blocks
+  - name: Interactive Plots
+  - name: Mermaid
+  - name: Diff2Html
+  - name: Leaflet
+  - name: Chartjs, Echarts and Vega-Lite
+  - name: TikZ
+  - name: Typograms
+  - name: Layouts
+  - name: Other Typography?
 ---
+
+
+
+
+# Equations
+
+jqhdgkjfksfskhfshslfh teste! 
+
+{% highlight python %}
+x = 10 + 12
+{% endhighlight %}
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

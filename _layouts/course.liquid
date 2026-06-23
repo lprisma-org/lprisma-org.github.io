@@ -1,0 +1,104 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.titulo }}</h1>
+    {% if page.descricao %}
+      <p class="post-description">{{ page.descricao }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="course">
+      {% if page.professor or page.nivel or page.local or page.horario %}
+        <div class="course-info">
+          {% if page.professor %}
+            <p><strong>Professor:</strong> {{ page.professor }}</p>
+          {% endif %}
+
+          {% if page.nivel %}
+            <p><strong>Nível:</strong> {{ page.nivel }}</p>
+          {% endif %}
+
+          {% if page.local %}
+            <p><strong>Local:</strong> {{ page.local }}</p>
+          {% endif %}
+
+          {% if page.horario %}
+            <p><strong>Horário:</strong> {{ page.horario }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {{ content }}
+
+      {% if page.cronograma %}
+        <h2>Cronograma</h2>
+        <table class="table table-sm table-responsive">
+          <thead>
+            <tr>
+              <th>Semana</th>
+              <th>Data</th>
+              <th>Tópico</th>
+              <th>Materiais</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for entry in page.cronograma %}
+              <tr>
+                <td>{{ entry.semana }}</td>
+                <td>{{ entry.data }}</td>
+                <td>
+                  {% if entry.topico %}
+                    <strong>{{ entry.topico }}</strong>
+                  {% endif %}
+                  {% if entry.descricao %}
+                    <div class="schedule-description">{{ entry.descricao | markdownify }}</div>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if entry.materiais %}
+                    <ul class="schedule-materials">
+                      {% for material in entry.materiais %}
+                        <li>
+                          {% if material.url %}
+                            {% if material.url contains '://' %}
+                              <a href="{{ material.url }}" target="_blank">{{ material.nome }}</a>
+                            {% else %}
+                              <a href="{{ material.url | relative_url }}" target="_blank">{{ material.nome }}</a>
+                            {% endif %}
+                          {% else %}
+                            {{ material.nome }}
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+    </div>
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.plugins contains 'al_comments' %}
+    {% include plugins/al_comments.liquid %}
+  {% endif %}
+</div>

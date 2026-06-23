@@ -1,34 +1,53 @@
 ---
 layout: about
-title: about
+title: Sobre
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Elementos Finitos - Otimização Topológica - Optomecânica
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  align: center
+  image: SIMUS_Logo.png
+  image_circular: true # crops the image to make it circular
+  # more_info: >
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false         # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+partner_institutions:
+  # Use 'logo' for image files (place in assets/img/partners/)
+  # Use 'icon' for Font Awesome/Academicons classes
+  - name: "IFB"
+    url: "https://www.ifb.edu.br"
+    logo: "partners/IFB_Logo.png"
+  - name: "UNICAMP"
+    url: "https://www.unicamp.br"
+    logo: "partners/UNICAMP_Logo.jpg"
+  - name: "FAPESP"
+    url: "https://fapesp.br"
+    logo: "partners/FAPESP.png"
+  - name: "FDTE"
+    url: "https://www.fdte.org.br"
+    logo: "partners/FDTE_Logo.png"
+
+
 ---
+SIMUS é um grupo de pesquisa dedicado à simulação computacional de estruturas, com foco em mecânica computacional, otimização topológica e optomecânica aplicada. Utilizando ferramentas de código aberto como o FEniCSx, Gmsh e ParaView, e softwares comerciais como o ANSYS, SolidWorks e Inventor, o grupo desenvolve soluções para problemas advindos de análises multifísicas em projeto estrutural, vibroacústica, materiais multifuncionais e sistemas de alta precisão, promovendo simultaneamente inovação, formação de recursos humanos e divulgação do conhecimento técnico-científico.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+
+

@@ -10,8 +10,8 @@ group :jekyll_plugins do
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
     gem 'jekyll-get-json'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
+    # gem 'jekyll-imagemagick'        # disabled: requires ImageMagick (convert) on PATH
+    # gem 'jekyll-jupyter-notebook'    # disabled: requires jupyter on PATH
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
@@ -40,7 +40,7 @@ end
 
 # Gems for al-folio plugins
 group :al_folio_plugins do
-    gem 'al_folio_core', '= 1.0.11'
+    gem "al_folio_core"
     gem 'al_icons', '= 1.0.0'
     gem 'al_folio_cv', '= 1.0.0'
     gem 'al_folio_distill', '= 1.0.2'

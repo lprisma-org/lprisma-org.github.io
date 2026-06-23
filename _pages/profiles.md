@@ -1,28 +1,64 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
+permalink: /pessoas/
+title: Pessoas
+description: Membros do grupo de pesquisa
 nav: true
 nav_order: 7
+
+_styles: >
+  .profile-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .profile-social-links a {
+    color: var(--global-text-color);
+    font-size: 1.25rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    opacity: 0.75;
+  }
+  .profile-social-links a:hover {
+    color: var(--global-theme-color);
+    opacity: 1;
+    transform: scale(1.15);
+  }
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    image: members_pics/rodrigo_lima.jpg
+    content: members/rodrigo_lima.md
+    image_circular: true
+    socials:
+      - icon: fa-solid fa-envelope
+        url: mailto:rodrigo.pereira@ifb.edu.br
+        title: Email
+      - icon: ai ai-google-scholar
+        url: https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID
+        title: Google Scholar
+      - icon: ai ai-lattes
+        url: http://lattes.cnpq.br/YOUR_LATTES_ID
+        title: Lattes
+      - icon: ai ai-orcid
+        url: https://orcid.org/YOUR_ORCID_ID
+        title: ORCID
+      - icon: fa-brands fa-github
+        url: https://github.com/simus-opt
+        title: GitHub
+      - icon: fa-brands fa-linkedin
+        url: https://www.linkedin.com/in/YOUR_LINKEDIN
+        title: LinkedIn
+      - icon: ai ai-cv
+        url: /assets/pdf/example_pdf.pdf
+        title: CV
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
+      <p>SCIA, Quadra 16, Área Especial n° 01.</p>
+      <p>Brasília, Distrito Federal 71250-000.</p>
+
 ---

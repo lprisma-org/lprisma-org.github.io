@@ -1,0 +1,7 @@
+**Rodrigo Lima Pereira** é Doutor em Engenharia Mecânica pela Universidade Estadual de Campinas (UNICAMP), com atuação nas áreas de Mecânica dos Sólidos e Projeto Mecânico. Possui experiência em modelagem computacional baseada no Método dos Elementos Finitos aplicado à vibroacústica, materiais porosos e otimização multifísica. Sua pesquisa atual concentra-se no desenvolvimento de metodologias de código aberto para otimização topológica envolvendo múltiplos materiais e físicas, utilizando plataformas como FEniCSx, Gmsh e ParaView.
+
+Realizou ainda estágio pós-doutoral na Universidade de São Paulo (USP) na área de Instrumentação Astronômica, atuando no desenvolvimento de sistemas optomecânicos e subsistemas estruturais associados ao Giant Magellan Telescope (GMT), em colaboração com instituições internacionais como a University of Arizona, Australian Astronomical Optics (Macquarie University) e Harvard-Smithsonian Center for Astrophysics. Atualmente é docente efetivo do Instituto Federal de Brasília (IFB) na área de Mecânica Automotiva e consultor do Instituto Steiner de Instrumentação e Ciência de Dados para assuntos de Optomecânica Aplicada.
+
+<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+

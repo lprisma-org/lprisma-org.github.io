@@ -1,0 +1,37 @@
+{% if site.teachings %}
+  <div class="courses">
+    {% assign courses_by_year = site.teachings | sort: 'ano' | reverse | group_by: 'ano' %}
+
+    {% for year_group in courses_by_year %}
+      <h2 class="year">{{ year_group.name }}</h2>
+      <div class="course-list">
+        {% assign year_courses = year_group.items | sort: 'nivel' %}
+        {% for course in year_courses %}
+          <div class="course-item">
+            <h3 class="course-title">
+              <a href="{{ course.url | relative_url }}">{{ course.titulo }}</a>
+            </h3>
+
+            <div class="course-meta">
+              {% if course.nivel %}
+                <span class="course-term">{{ course.nivel }}</span>
+              {% endif %}
+
+              {% if course.professor %}
+                <span class="course-instructor">{{ course.professor }}</span>
+              {% endif %}
+            </div>
+
+            {% if course.descricao %}
+              <div class="course-description">
+                {{ course.descricao | markdownify }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>Nenhuma disciplina disponível ainda.</p>
+{% endif %}
