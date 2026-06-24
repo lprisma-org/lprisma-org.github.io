@@ -101,22 +101,22 @@ profiles:
         url: mailto:rodrigo.pereira@ifb.edu.br
         title: Email
       - icon: ai ai-google-scholar
-        url: https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID
+        url: https://scholar.google.com/citations?user=DgdeYOcAAAAJ&hl
         title: Google Scholar
       - icon: ai ai-lattes
-        url: http://lattes.cnpq.br/YOUR_LATTES_ID
+        url: http://lattes.cnpq.br/8648415987292827
         title: Lattes
       - icon: ai ai-orcid
-        url: https://orcid.org/YOUR_ORCID_ID
+        url: https://orcid.org/0000-0002-0442-4666
         title: ORCID
       - icon: fa-brands fa-github
-        url: https://github.com/simus-opt
+        url: https://github.com/rodrigolp13
         title: GitHub
       - icon: fa-brands fa-linkedin
-        url: https://www.linkedin.com/in/YOUR_LINKEDIN
+        url: https://www.linkedin.com/in/rodrigo-lima-pereira-148286a2
         title: LinkedIn
       - icon: ai ai-cv
-        url: /assets/pdf/example_pdf.pdf
+        url: /assets/pdf/CVs/RLP_CV_EN.pdf
         title: CV
     more_info: >
       <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
