@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositorios/
 title: Repositórios
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Repositórios de Códigos do Grupo de Pesquisa L-Prisma e de seus Colaboradores
 nav: true # hide from navbar
 nav_order: 4
 ---

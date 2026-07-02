@@ -1,0 +1,32 @@
+# Sidebar navigation for project hubs.
+# Each top-level key is a sidebar ID referenced by project front matter (sidebar_id).
+# Sections contain grouped links; use url: "#" for future/placeholder pages.
+
+otimizacao_topologica_fenicsx:
+  title: Otimização Topológica com FEniCSx
+  hub_url: /projects/RLP/Otimizacao_Topologica_FEniCSx/
+  sections:
+    - heading: Fundamentos
+      items:
+        - name: Equações da Elasticidade Linear
+          url: /projects/RLP/Equacoes_Elasticidade_Linear/
+        - name: Método dos Elementos Finitos
+          url: "#"
+        - name: Introdução ao FEniCSx
+          url: "#"
+
+    - heading: Otimização Topológica
+      items:
+        - name: Método SIMP
+          url: "#"
+        - name: Método BESO
+          url: "#"
+        - name: Filtros de Sensibilidade
+          url: "#"
+
+    - heading: Exemplos
+      items:
+        - name: Viga MBB 2D
+          url: "#"
+        - name: Viga em Balanço 3D
+          url: "#"

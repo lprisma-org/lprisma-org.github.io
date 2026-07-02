@@ -1,0 +1,429 @@
+---
+layout: default
+---
+
+{% comment %}
+  Project Hub Layout — renders a page with:
+    - Left sidebar: project navigation (from _data/project_sidebars.yml)
+    - Right sidebar: table of contents (from page.toc front matter)
+    - Center: main content with optional authors
+
+  Front matter:
+    sidebar_id: key matching an entry in _data/project_sidebars.yml
+    authors: (optional) list of {name, url, affiliations: {name, url}}
+    toc: (optional) list of {name, subsections: [{name}]}
+{% endcomment %}
+
+{% assign sidebar_id = page.sidebar_id %}
+{% assign sidebar = site.data.project_sidebars[sidebar_id] %}
+
+<style>
+  /* ── Wrapper — same max-width as normal pages ── */
+  .project-hub {
+    max-width: {{ site.max_width | default: "930px" }};
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+
+  /* ══════════════════════════════════════════════
+     LEFT SIDEBAR — project navigation
+     ══════════════════════════════════════════════ */
+  .project-sidebar {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 240px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 1.5rem 0;
+    border-right: 1px solid var(--global-divider-color);
+    background: var(--global-bg-color);
+    z-index: 90;
+  }
+
+  .project-sidebar .sidebar-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--global-theme-color);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    line-height: 1.3;
+  }
+
+  .project-sidebar .sidebar-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .project-sidebar .sidebar-title a:hover {
+    text-decoration: underline;
+  }
+
+  .project-sidebar .sidebar-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .project-sidebar .sidebar-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--global-text-color-light);
+    padding: 0.35rem 1rem;
+    margin: 0;
+  }
+
+  .project-sidebar .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-sidebar .sidebar-links li a {
+    display: block;
+    padding: 0.4rem 1rem 0.4rem 1.5rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+  }
+
+  .project-sidebar .sidebar-links li a:hover {
+    color: var(--global-theme-color);
+    background-color: var(--global-bg-color);
+    border-left-color: var(--global-theme-color);
+  }
+
+  .project-sidebar .sidebar-links li a.active {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    border-left-color: var(--global-theme-color);
+    background-color: rgba(var(--global-theme-color-rgb, 0, 0, 0), 0.05);
+  }
+
+  .project-sidebar .sidebar-links li a.disabled {
+    color: var(--global-text-color-light);
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .project-sidebar .sidebar-links li a.disabled::after {
+    content: " (em breve)";
+    font-size: 0.7rem;
+    font-style: italic;
+  }
+
+  /* ══════════════════════════════════════════════
+     RIGHT SIDEBAR — table of contents
+     ══════════════════════════════════════════════ */
+  .project-toc {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 220px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 1.5rem 0;
+    border-left: 1px solid var(--global-divider-color);
+    background: var(--global-bg-color);
+    z-index: 90;
+  }
+
+  .project-toc .toc-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--global-theme-color);
+    margin-bottom: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  .project-toc .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-toc .toc-list li a {
+    display: block;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+    border-right: 2px solid transparent;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+  }
+
+  .project-toc .toc-list li a:hover {
+    color: var(--global-theme-color);
+    border-right-color: var(--global-theme-color);
+  }
+
+  .project-toc .toc-list li a.toc-active {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    border-right-color: var(--global-theme-color);
+  }
+
+  .project-toc .toc-sublist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-toc .toc-sublist li a {
+    padding-left: 1.75rem;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+
+  /* ══════════════════════════════════════════════
+     AUTHORS BYLINE
+     ══════════════════════════════════════════════ */
+  .project-authors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .project-author {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .project-author .author-name {
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  .project-author .author-name a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  .project-author .author-name a:hover {
+    text-decoration: underline;
+  }
+
+  .project-author .author-affiliation {
+    font-size: 0.78rem;
+    color: var(--global-text-color-light);
+  }
+
+  /* ══════════════════════════════════════════════
+     MAIN CONTENT AREA
+     ══════════════════════════════════════════════ */
+  .project-hub-content {
+    padding: 1rem 0;
+  }
+
+  .project-hub-content .post-title {
+    margin-bottom: 0.25rem;
+  }
+
+  .project-hub-content .post-description {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1rem;
+  }
+
+  /* ══════════════════════════════════════════════
+     MOBILE RESPONSIVE
+     ══════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    .project-sidebar {
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: auto;
+      max-height: none;
+      border-right: none;
+      border-bottom: 1px solid var(--global-divider-color);
+      padding: 1rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-toc {
+      display: none;
+    }
+
+    .mobile-sidebar-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--global-theme-color);
+      background: none;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+    }
+
+    .mobile-sidebar-toggle .chevron {
+      transition: transform 0.2s ease;
+      font-size: 0.7rem;
+    }
+
+    .mobile-sidebar-toggle.open .chevron {
+      transform: rotate(90deg);
+    }
+
+    .sidebar-nav-content {
+      display: none;
+    }
+
+    .sidebar-nav-content.open {
+      display: block;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .mobile-sidebar-toggle {
+      display: none;
+    }
+
+    .sidebar-nav-content {
+      display: block !important;
+    }
+  }
+</style>
+
+<!-- ═══ Left Sidebar — Project Navigation ═══ -->
+<nav class="project-sidebar" aria-label="Project navigation">
+  {% if sidebar %}
+    <div class="sidebar-title">
+      <a href="{{ sidebar.hub_url | relative_url }}">{{ sidebar.title }}</a>
+    </div>
+
+    <button class="mobile-sidebar-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+      <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
+      Navegação do Projeto
+    </button>
+
+    <div class="sidebar-nav-content">
+      {% for section in sidebar.sections %}
+        <div class="sidebar-section">
+          <h3 class="sidebar-heading">{{ section.heading }}</h3>
+          <ul class="sidebar-links">
+            {% for item in section.items %}
+              <li>
+                {% if item.url == "#" %}
+                  <a href="#" class="disabled">{{ item.name }}</a>
+                {% else %}
+                  <a href="{{ item.url | relative_url }}"
+                     {% if page.url == item.url %}class="active"{% endif %}>
+                    {{ item.name }}
+                  </a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</nav>
+
+<!-- ═══ Right Sidebar — Table of Contents ═══ -->
+{% if page.toc and page.toc.size > 0 %}
+<nav class="project-toc" aria-label="Table of contents">
+  <div class="toc-title">Conteúdo</div>
+  <ul class="toc-list">
+    {% for section in page.toc %}
+      <li>
+        <a href="#{{ section.name | slugify }}">{{ section.name }}</a>
+      </li>
+      {% if section.subsections %}
+        <ul class="toc-sublist">
+          {% for sub in section.subsections %}
+            <li>
+              <a href="#{{ sub.name | slugify }}">{{ sub.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+
+<!-- ═══ Main Content ═══ -->
+<div class="project-hub">
+  <div class="project-hub-content">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <!-- Authors byline -->
+    {% if page.authors %}
+    <div class="project-authors">
+      {% for author in page.authors %}
+        <div class="project-author">
+          <div class="author-name">
+            {% if author.url %}
+              <a href="{{ author.url }}">{{ author.name }}</a>
+            {% else %}
+              {{ author.name }}
+            {% endif %}
+          </div>
+          {% if author.affiliations %}
+            <div class="author-affiliation">{{ author.affiliations.name }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <article>
+      {{ content }}
+    </article>
+  </div>
+</div>
+
+<!-- ═══ TOC scroll-spy (highlight current section) ═══ -->
+{% if page.toc and page.toc.size > 0 %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tocLinks = document.querySelectorAll('.project-toc a');
+    if (!tocLinks.length) return;
+
+    var headings = [];
+    tocLinks.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) headings.push({ el: el, link: link });
+    });
+
+    function onScroll() {
+      var scrollPos = window.scrollY + 120;
+      var current = null;
+      headings.forEach(function (h) {
+        if (h.el.offsetTop <= scrollPos) current = h;
+      });
+      tocLinks.forEach(function (l) { l.classList.remove('toc-active'); });
+      if (current) current.link.classList.add('toc-active');
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  });
+</script>
+{% endif %}

@@ -2,7 +2,7 @@
 layout: page
 permalink: /ensino/
 title: Ensino
-description: Materiais de ensino dividos por ano/disciplina.
+description: Materiais de ensino dividos por ano/disciplina
 nav: true
 nav_order: 6
 calendar: true
