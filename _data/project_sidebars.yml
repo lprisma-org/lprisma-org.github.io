@@ -20,7 +20,7 @@ otimizacao_topologica_fenicsx:
         - name: Método SIMP
           url: "#"
         - name: Método BESO
-          url: "#"
+          url: /projects/RLP/Equacoes_BESO/
         - name: Filtros de Sensibilidade
           url: "#"
 
