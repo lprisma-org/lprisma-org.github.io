@@ -1,0 +1,18 @@
+# Lab-scope registry: institutional anchors of the L-PRISMA group.
+# Group-level identity, distinct from _data/participants.yml (per-person).
+# Maintained in the lab administration scope, not by individual members.
+# Single source of truth for institutional identifiers referenced across the
+# site (Sobre page and future sections). See docs/SITEMAP.md.
+
+name: Laboratorio de Processamento e Reconhecimento Inteligente de Sistemas e Metodos Analiticos
+short_name: L-PRISMA
+lead_institution: Instituto Federal de Brasilia (IFB)
+
+# CNPq Diretorio dos Grupos de Pesquisa (DGP)
+dgp:
+  group_id: "820442"
+  espelho_url: http://dgp.cnpq.br/dgp/espelhogrupo/820442
+  certified:            # to confirm: certification status on DGP
+
+# other institutional anchors, to confirm
+cnpq_area:              # CNPq knowledge area

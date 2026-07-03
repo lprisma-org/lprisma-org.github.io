@@ -1,35 +1,67 @@
+<style>
+  .courses .category {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .courses .category:first-child {
+    margin-top: 0.5rem;
+  }
+  .courses .year {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .courses .course-list {
+    margin-bottom: 0.5rem;
+  }
+  .courses .course-item {
+    margin-bottom: 1rem;
+  }
+</style>
+
 {% if site.teachings %}
   <div class="courses">
-    {% assign courses_by_year = site.teachings | sort: 'ano' | reverse | group_by: 'ano' %}
+    {% assign courses_by_professor = site.teachings | group_by: 'professor' %}
 
-    {% for year_group in courses_by_year %}
-      <h2 class="year">{{ year_group.name }}</h2>
-      <div class="course-list">
-        {% assign year_courses = year_group.items | sort: 'nivel' %}
-        {% for course in year_courses %}
-          <div class="course-item">
-            <h3 class="course-title">
-              <a href="{{ course.url | relative_url }}">{{ course.titulo }}</a>
-            </h3>
+    {% for professor_group in courses_by_professor %}
+      <h2 class="category">{{ professor_group.name }}</h2>
 
-            <div class="course-meta">
-              {% if course.nivel %}
-                <span class="course-term">{{ course.nivel }}</span>
-              {% endif %}
+      {% assign courses_by_year = professor_group.items | sort: 'ano' | reverse | group_by: 'ano' %}
+      {% for year_group in courses_by_year %}
+        {% if year_group.name != '' %}
+          <h3 class="year">{{ year_group.name }}</h3>
+        {% endif %}
+        <div class="course-list">
+          {% assign year_courses = year_group.items | sort: 'nivel' %}
+          {% for course in year_courses %}
+            <div class="course-item">
+              <h4 class="course-title">
+                {% if course.link %}
+                  <a href="{{ course.link }}" target="_blank" rel="noopener noreferrer">{{ course.titulo }}</a>
+                {% else %}
+                  <a href="{{ course.url | relative_url }}">{{ course.titulo }}</a>
+                {% endif %}
+              </h4>
 
-              {% if course.professor %}
-                <span class="course-instructor">{{ course.professor }}</span>
+              <div class="course-meta">
+                {% if course.nivel %}
+                  <span class="course-term">{{ course.nivel }}</span>
+                {% endif %}
+                {% if course.local %}
+                  <span class="course-instructor">{{ course.local }}</span>
+                {% endif %}
+              </div>
+
+              {% if course.descricao %}
+                <div class="course-description">
+                  {{ course.descricao | markdownify }}
+                </div>
               {% endif %}
             </div>
-
-            {% if course.descricao %}
-              <div class="course-description">
-                {{ course.descricao | markdownify }}
-              </div>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
     {% endfor %}
   </div>
 {% else %}

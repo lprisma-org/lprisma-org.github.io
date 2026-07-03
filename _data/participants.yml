@@ -1,0 +1,48 @@
+# Canonical, living registry of L-PRISMA participants.
+# Single source of truth that ties each person's identity across sections:
+# member page slug, project folder/category, github handle and author aliases
+# used in the bibliography. Read to route increments; written when a new
+# participant is registered or an alias is reconciled. See docs/SITEMAP.md
+# and docs/AGENTIC_FLOW.md.
+#
+# anchor fields (orcid, lattes, scholar, github) feed the extraction step:
+# publications from orcid/scholar/doi, repositories from github.
+
+participants:
+  - slug: pedro_brom
+    display_name: Pedro Carvalho Brom
+    project_dir: PCB
+    project_category: P. C. Brom
+    github: pcbrom
+    website: https://pcbrom.com
+    orcid: 0000-0002-1288-7695
+    lattes: http://lattes.cnpq.br/0154064396756002
+    scholar: d42SU3YAAAAJ
+    bib_author_aliases:
+      - "Brom, P."
+      - "Brom, Pedro C."
+      - "Brom, Pedro Carvalho"
+
+  - slug: rodrigo_lima
+    display_name: Rodrigo Lima Pereira
+    project_dir: RLP
+    project_category: R. L. Pereira
+    github: rodrigolp13
+    orcid:            # to confirm with participant
+    lattes:           # to confirm with participant
+    scholar:          # to confirm with participant
+    bib_author_aliases:
+      - "Pereira, R. L."
+      - "Pereira, Rodrigo L"
+      - "Pereira, Rodrigo L."
+
+  - slug: rodrigo_abdo
+    display_name: Rodrigo Ferreira Abdo
+    project_dir: RFA
+    project_category: R. F. Abdo
+    github: rfa-rodrigo
+    orcid:            # to confirm with participant
+    lattes:           # to confirm with participant
+    scholar:          # to confirm with participant
+    bib_author_aliases:
+      - "Abdo, R. F."

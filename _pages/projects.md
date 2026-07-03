@@ -5,7 +5,7 @@ permalink: /projetos/
 description: Projetos de Pesquisa do Grupo L-Prisma
 nav: true
 nav_order: 3
-display_categories: [R. L. Pereira, P. Brom, R. F. Abdo]
+display_categories: [R. L. Pereira, P. C. Brom, R. F. Abdo]
 horizontal: false
 ---
 
