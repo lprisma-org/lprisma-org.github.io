@@ -123,10 +123,7 @@ profiles:
       <p>SCIA, Quadra 16, Área Especial n° 01.</p>
       <p>Brasília, Distrito Federal 71250-000.</p>
 
-
-
-
-- align: right
+  - align: right
     image: members_pics/wellyelton_gualberto.png
     content: members/wellyelton_gualberto.md
     image_circular: true
