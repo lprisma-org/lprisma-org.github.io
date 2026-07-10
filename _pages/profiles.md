@@ -122,35 +122,4 @@ profiles:
       <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
       <p>SCIA, Quadra 16, Área Especial n° 01.</p>
       <p>Brasília, Distrito Federal 71250-000.</p>
-
-
-
-
-- align: right
-    image: members_pics/wellyelton_gualberto.png
-    content: members/wellyelton_gualberto.md
-    image_circular: true
-    socials:
-      - icon: fa-solid fa-envelope
-        url: mailto: wellyelton..rodrigues@ifb.edu.br
-        title: Email
-      - icon: ai ai-google-scholar
-        url: SEU_LINK_GOOGLE_SCHOLAR
-        title: Google Scholar
-      - icon: ai ai-lattes
-        url: http://lattes.cnpq.br/5912886234775348
-        title: Lattes
-      - icon: ai ai-orcid
-        url: SEU_LINK_ORCID
-        title: ORCID
-      - icon: fa-brands fa-github
-        url: SEU_LINK_GITHUB
-        title: GitHub
-      - icon: fa-brands fa-linkedin
-        url: SEU_LINK_LINKEDIN
-        title: LinkedIn
-    more_info: >
-      <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
-      <p>SCIA, Quadra 16, Área Especial n° 01.</p>
-      <p>Brasília, Distrito Federal 71250-000.</p>
 ---
