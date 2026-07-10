@@ -124,31 +124,28 @@ profiles:
       <p>Brasília, Distrito Federal 71250-000.</p>
 
   - align: right
-    image: members_pics/wellyelton.jpg
-    content: members/wellyelton.md
+    image: members_pics/wellyelton_gualberto.png
+    content: members/wellyelton_gualberto.md
     image_circular: true
     socials:
       - icon: fa-solid fa-envelope
-        url: mailto:wellyelton.rodrigues@ifb.edu.br
+        url: "mailto:wellyelton.rodrigues@ifb.edu.br"
         title: Email
       - icon: ai ai-google-scholar
-        url: https://scholar.google.com/citations?user=DgdeYOcAAAAJ&hl
+        url: "https://scholar.google.com.br/citations?user=wP26WroAAAAJ&hl=pt-BR"
         title: Google Scholar
       - icon: ai ai-lattes
-        url: http://lattes.cnpq.br/5912886234775348
+        url: "http://lattes.cnpq.br/5912886234775348"
         title: Lattes
       - icon: ai ai-orcid
-        url: https://orcid.org/0000-0002-1198-1620
+        url: "https://orcid.org/0000-0002-1198-1620"
         title: ORCID
       - icon: fa-brands fa-github
-        url: https://github.com/Wellyelton-G/
+        url: "https://github.com/Wellyelton-G"
         title: GitHub
       - icon: fa-brands fa-linkedin
-        url: https://www.linkedin.com/in/wellyeltongualberto/
+        url: "https://www.linkedin.com/in/wellyeltongualberto/"
         title: LinkedIn
-      - icon: ai ai-cv
-        url: /assets/pdf/CVs/RLP_CV_EN.pdf
-        title: CV
     more_info: >
       <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
       <p>SCIA, Quadra 16, Área Especial n° 01.</p>
