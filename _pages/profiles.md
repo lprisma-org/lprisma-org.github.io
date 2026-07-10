@@ -124,7 +124,7 @@ profiles:
       <p>Brasília, Distrito Federal 71250-000.</p>
 
   - align: right
-    image: members_pics/Perfil_Lattes.png
+    image: members_pics/Perfil_wellyelton.png
     content: members/wellyelton_gualberto.md
     image_circular: true
     socials:
