@@ -12,7 +12,7 @@ lead_institution: Instituto Federal de Brasilia (IFB)
 dgp:
   group_id: "820442"
   espelho_url: http://dgp.cnpq.br/dgp/espelhogrupo/820442
-  certified:            # to confirm: certification status on DGP
+  certified: # to confirm: certification status on DGP
 
 # other institutional anchors, to confirm
-cnpq_area:              # CNPq knowledge area
+cnpq_area: # CNPq knowledge area

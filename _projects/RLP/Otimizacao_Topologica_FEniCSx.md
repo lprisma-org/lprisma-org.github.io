@@ -48,7 +48,7 @@ O [FEniCSx](https://fenicsproject.org/) é uma plataforma de código aberto para
 
 As principais características do FEniCSx incluem:
 
-- **Formulação variacional em alto nível** — A linguagem UFL (*Unified Form Language*) permite expressar formas bilineares e lineares diretamente em Python, de maneira quase idêntica à notação matemática.
+- **Formulação variacional em alto nível** — A linguagem UFL (_Unified Form Language_) permite expressar formas bilineares e lineares diretamente em Python, de maneira quase idêntica à notação matemática.
 - **Geração automática de código** — O compilador de formas FFCx gera código C otimizado a partir das formas UFL, eliminando a necessidade de implementação manual de rotinas de montagem.
 - **Paralelismo nativo** — Suporte integrado a MPI para computação em múltiplos processadores.
 - **Flexibilidade de malhas** — Suporte a malhas de triângulos, tetraedros, quadriláteros e hexaedros, com capacidade de importação de malhas externas via [Gmsh](https://gmsh.info/).
@@ -65,10 +65,10 @@ Diferentemente da otimização de forma, que apenas modifica os contornos de uma
 
 Os tutoriais deste projeto abordam os seguintes métodos de otimização topológica:
 
-| Método | Descrição |
-|---|---|
-| **SIMP** | *Solid Isotropic Material with Penalization* — penaliza densidades intermediárias para convergir a uma solução 0/1 |
-| **BESO** | *Bi-directional Evolutionary Structural Optimization* — adiciona e remove elementos discretamente com base na sensibilidade |
+| Método   | Descrição                                                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **SIMP** | _Solid Isotropic Material with Penalization_ — penaliza densidades intermediárias para convergir a uma solução 0/1          |
+| **BESO** | _Bi-directional Evolutionary Structural Optimization_ — adiciona e remove elementos discretamente com base na sensibilidade |
 
 ---
 
@@ -77,16 +77,19 @@ Os tutoriais deste projeto abordam os seguintes métodos de otimização topoló
 Os tutoriais estão organizados nas seguintes seções, acessíveis pela barra de navegação lateral:
 
 ### Fundamentos
+
 Revisão das equações governantes da mecânica dos sólidos, formulação do método dos elementos finitos e introdução ao FEniCSx.
 
 ### Otimização Topológica
+
 Teoria e implementação dos métodos SIMP e BESO, incluindo técnicas de filtragem de sensibilidade.
 
 ### Exemplos
+
 Aplicações práticas em problemas clássicos de otimização topológica, como a viga MBB e a viga em balanço.
 
 ## Referências
 
 ---
 
-> **Nota:** Os tutoriais marcados como *(em breve)* na barra lateral estão em desenvolvimento e serão disponibilizados progressivamente.
+> **Nota:** Os tutoriais marcados como _(em breve)_ na barra lateral estão em desenvolvimento e serão disponibilizados progressivamente.

@@ -28,9 +28,9 @@ participants:
     project_dir: RLP
     project_category: R. L. Pereira
     github: rodrigolp13
-    orcid:            # to confirm with participant
-    lattes:           # to confirm with participant
-    scholar:          # to confirm with participant
+    orcid: # to confirm with participant
+    lattes: # to confirm with participant
+    scholar: # to confirm with participant
     bib_author_aliases:
       - "Pereira, R. L."
       - "Pereira, Rodrigo L"
@@ -41,8 +41,8 @@ participants:
     project_dir: RFA
     project_category: R. F. Abdo
     github: rfa-rodrigo
-    orcid:            # to confirm with participant
-    lattes:           # to confirm with participant
-    scholar:          # to confirm with participant
+    orcid: # to confirm with participant
+    lattes: # to confirm with participant
+    scholar: # to confirm with participant
     bib_author_aliases:
       - "Abdo, R. F."

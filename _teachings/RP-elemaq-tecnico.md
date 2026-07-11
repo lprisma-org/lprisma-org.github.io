@@ -11,36 +11,36 @@ cronograma:
   - semana: 1
     topico: Introdução aos Elementos de Máquinas
     descricao: Apresentação da unidade curricular e suas ferramentas.
-   
+
   - semana: 2 - 3
     topico: Introdução à Resistência dos Materiais
     descricao: Breve apresentação de estática e resistência dos materiais.
     materiais:
       - nome: Slides de Aula
         url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_01_Introducao_a_Resistencia_dos_Materiais.pdf
-      
+
   - semana: 4 - 6
     topico: Elementos de Fixação
     descricao: Apresentação de rebites, pinos, cavilhas e cupilhas, parafusos, roscas e porcas, arruelas, anéis elásticos e chavetas.
     materiais:
       - nome: Slides de Aula
         url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_02_Elementos_de_Fixacao.pdf
-      
+
   - semana: 7 - 8
     topico: Elementos de Apoio
     descricao: Apresentação de buchas, guias, mancais e rolamentos.
     materiais:
       - nome: Slides de Aula
         url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_03_Elementos_de_Apoio.pdf
-  
+
   - semana: 9
     topico: Prova Bimestral 01
     descricao: Aplicação de prova presencial sem consulta.
-      
+
   - semana: 10
     topico: Resolução da Prova Bimestral 01
     descricao: Resolução didática da prova bimestral 01 e discussão de notas.
-      
+
   - semana: 11
     topico: Elementos Elásticos
     descricao: Apresentação de molas, suas representações convencionais e tipos mais comuns.
@@ -52,20 +52,20 @@ cronograma:
     topico: Elementos de Transmissão
     descricao: Apresentação de eixos e árvores, polias e correias, correntes, cabos, engrenagens e acoplamentos.
     materiais:
-        - nome: Slides de Aula
-          url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_05_Elementos_de_Transmissao.pdf
+      - nome: Slides de Aula
+        url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_05_Elementos_de_Transmissao.pdf
 
   - semana: 15
     topico: Elementos de Vedação
     descricao: Apresentação de juntas fixas e móveis, selos mecânicos e retentores.
     materiais:
-        - nome: Slides de Aula
-          url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_06_Elementos_de_Vedacao.pdf
-    
+      - nome: Slides de Aula
+        url: /assets/pdf/Aulas/Rodrigo_Lima/EleMaq_Tecnico/Aula_06_Elementos_de_Vedacao.pdf
+
   - semana: 16
     topico: Prova Bimestral 02
     descricao: Aplicação de prova presencial sem consulta.
-    
+
   - semana: 17
     topico: Resolução da Prova Bimestral 02
     descricao: Resolução didática da prova bimestral 02 e discussão de notas.
@@ -75,13 +75,14 @@ cronograma:
     descricao: Aplicação de prova presencial sem consulta.
 ---
 
-
 ## Detalhes do Curso
 
 Objetivos:
+
 - Apresentar os diferentes conjuntos mecânicos e seus componentes usados na área automotiva ou no universo da Mecânica.
 
 Ao final do curso o estudante será capaz de:
+
 - Identificar os vários elementos de máquinas;
 - Compreender suas funções, características e combinações básicas;
 - Analisar sua importância no desempenho e na durabilidade dos sistemas mecânicos.

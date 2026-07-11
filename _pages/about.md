@@ -14,7 +14,7 @@ profile:
   #   <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false         # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -52,8 +52,3 @@ partner_institutions:
 O L-PRISMA é um grupo de pesquisa interdisciplinar que reúne docentes das Ciências Exatas e Engenharias com foco no desenvolvimento e aplicação de métodos avançados de análise de dados e inteligência artificial. O grupo atua tanto em pesquisas teóricas quanto aplicadas, promovendo a integração entre modelagem numérica, aprendizado de máquina, reconhecimento de padrões e estatística computacional. Entre os principais interesses do L-PRISMA estão o desenvolvimento de modelos preditivos, algoritmos de aprendizado supervisionado e não supervisionado, redes neurais artificiais, análise de séries temporais e simulações numéricas. Além da pesquisa científica, o grupo contribui para a formação de recursos humanos qualificados por meio da orientação de estudantes em projetos de extensão e inovação tecnológica, em parcerias com instituições públicas e privadas e na divulgação científica dos trabalhos realizados pelo grupo.
 
 O L-PRISMA está registrado no [Diretório dos Grupos de Pesquisa (DGP) do CNPq]({{ site.data.lab.dgp.espelho_url }}).
-
-
-
-
-

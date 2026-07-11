@@ -29,7 +29,7 @@ _styles: >
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/  
+  # and create one content file for each profile inside _pages/
   - align: right
     image: members_pics/pedro_brom.png
     content: members/pedro_brom.md
