@@ -1,6 +1,7 @@
 name: Upgrade contract checks
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -52,7 +53,7 @@ jobs:
 
       - name: Upload upgrade report 📄
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: al-folio-upgrade-report
           path: al-folio-upgrade-report.md
