@@ -70,23 +70,20 @@ profiles:
         url: mailto:rodrigo.abdo@ifb.edu.br
         title: Email
       - icon: ai ai-google-scholar
-        url: https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID
+        url: https://scholar.google.com/citations?user=GCmcu_EAAAAJ
         title: Google Scholar
       - icon: ai ai-lattes
-        url: http://lattes.cnpq.br/YOUR_LATTES_ID
+        url: http://lattes.cnpq.br/7719881257437340
         title: Lattes
       - icon: ai ai-orcid
-        url: https://orcid.org/YOUR_ORCID_ID
+        url: https://orcid.org/0000-0002-7232-4704
         title: ORCID
       - icon: fa-brands fa-github
-        url: https://github.com/simus-opt
+        url: https://github.com/rfa-rodrigo
         title: GitHub
       - icon: fa-brands fa-linkedin
-        url: https://www.linkedin.com/in/YOUR_LINKEDIN
+        url: https://www.linkedin.com/in/rodrigo-a-02472828/
         title: LinkedIn
-      - icon: ai ai-cv
-        url: /assets/pdf/example_pdf.pdf
-        title: CV
     more_info: >
       <p>Instituto Federal de Brasília (IFB) - Campus Estrutural.</p>
       <p>SCIA, Quadra 16, Área Especial n° 01.</p>
