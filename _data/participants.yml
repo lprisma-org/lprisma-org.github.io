@@ -37,12 +37,12 @@ participants:
       - "Pereira, Rodrigo L."
 
   - slug: rodrigo_abdo
-    display_name: Rodrigo Ferreira Abdo
+    display_name: Rodrigo Figueiredo Abdo
     project_dir: RFA
     project_category: R. F. Abdo
     github: rfa-rodrigo
-    orcid: # to confirm with participant
-    lattes: # to confirm with participant
-    scholar: # to confirm with participant
+    orcid: 0000-0002-7232-4704
+    lattes: http://lattes.cnpq.br/7719881257437340
+    scholar: GCmcu_EAAAAJ
     bib_author_aliases:
       - "Abdo, R. F."
