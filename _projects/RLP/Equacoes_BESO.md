@@ -22,16 +22,17 @@ bibliography: 2018-12-22-distill.bib
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Forma Forte
-    # if a section has subsections, you can add them as follows:
-    # subsections:
-  - name: Forma Fraca
+  - name: Minimização da Compliance Estrutural
+  - name: Análise de Sensibilidade
     subsections:
-      - name: Representação Clássica
-  - name: Representação Matricial
+      - name: Interpretação Física
+  - name: Filtro de Sensibilidades
+  - name: Estabilização e Normalização das Sensibilidades
+  - name: Atualização Heurística da Topologia e Critério de Parada
+  - name: Algoritmo BESO
 ---
 
-## Minimização da _Compliance_ Estrutural
+## Minimização da Compliance Estrutural
 
 Um dos problemas mais comuns da otimização topológica estrutural consiste na minimização da _compliance_ média. Assim, nesta seção é considerada a metodologia _Bi-directional Evolutionary Structural Optimization Method_ (BESO) para a solução desse problema, cuja formulação é dada por (Huang; Xie, 2010a):
 
@@ -123,7 +124,7 @@ $$ \tag{12}
     \boxed{\alpha_i = \frac{dC}{dx_i} = -\frac{1}{2}\,p\,x_i^{p-1}\mathbf{u}_i^T\mathbf{K}_i^0\mathbf{u}_i.}
 $$
 
-### Número de Sensibilidade: Interpretação Física
+### Interpretação Física
 
 Considerando então a Eq. 12, e o fato de que,
 
